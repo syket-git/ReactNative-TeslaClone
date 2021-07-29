@@ -2,13 +2,15 @@ import React from 'react';
 import { View, ImageBackground, Text } from 'react-native';
 import CustomButton from '../Button';
 import styles from './styles.js';
-function index({ image, title, subTitle }) {
+function index({ image, title, subTitle, subTitleCTA }) {
   return (
     <View style={styles.carContainer}>
       <ImageBackground source={image} style={styles.image} />
       <View style={styles.titles}>
         <Text style={styles.title}>{title}</Text>
-        <Text style={styles.subTitle}>{subTitle}</Text>
+        <Text style={styles.subTitle}>
+          {subTitle} <Text style={styles.subTitleCTA}>{subTitleCTA}</Text>
+        </Text>
       </View>
 
       <View style={styles.buttonContainer}>

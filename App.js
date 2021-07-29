@@ -9,7 +9,8 @@ export default function App() {
       <CarItem
         image={require('./assets/images/ModelS.jpeg')}
         title="Model S"
-        subTitle="Starting at $499,999"
+        subTitle="Order Online for"
+        subTitleCTA="Touchless Delivery"
       />
 
       <StatusBar style="auto" />
